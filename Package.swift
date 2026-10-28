@@ -4,36 +4,36 @@
 // Generated at release time; do not edit by hand.
 //
 // Products:
-//   - DevtoolE2eInterceptor      manual: register the URLProtocol yourself.
-//   - DevtoolE2eInterceptorAuto  auto: linking it is enough; an Obj-C `+load` registers the URLProtocol and
+//   - DevScenarioHttpInterceptor      manual: register the URLProtocol yourself.
+//   - DevScenarioHttpInterceptorAuto  auto: linking it is enough; an Obj-C `+load` registers the URLProtocol and
 //                                adds it to every URLSession built with a custom configuration.
 //
-// Both products share one DevtoolE2eInterceptor framework, so the URLProtocol class exists exactly once.
+// Both products share one DevScenarioHttpInterceptor framework, so the URLProtocol class exists exactly once.
 import PackageDescription
 
 let package = Package(
-    name: "DevtoolE2eInterceptor",
+    name: "DevScenarioHttpInterceptor",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "DevtoolE2eInterceptor",
-            targets: ["DevtoolE2eInterceptor"]
+            name: "DevScenarioHttpInterceptor",
+            targets: ["DevScenarioHttpInterceptor"]
         ),
         .library(
-            name: "DevtoolE2eInterceptorAuto",
-            targets: ["DevtoolE2eInterceptor", "DevtoolE2eInterceptorAutoBootstrap"]
+            name: "DevScenarioHttpInterceptorAuto",
+            targets: ["DevScenarioHttpInterceptor", "DevScenarioHttpInterceptorAutoBootstrap"]
         ),
     ],
     targets: [
         .binaryTarget(
-            name: "DevtoolE2eInterceptor",
-            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.2.10/DevtoolE2eInterceptor.xcframework.zip",
-            checksum: "307c3edc2eecfe6b9a313311b9b9f928dea57948ca6bd3d3c8167df3668d9686"
+            name: "DevScenarioHttpInterceptor",
+            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.3.0/DevScenarioHttpInterceptor.xcframework.zip",
+            checksum: "529ca0d4ad9ed98aa87a1cfc5867c7d0378e8c54c7b581248029372757b36080"
         ),
         .binaryTarget(
-            name: "DevtoolE2eInterceptorAutoBootstrap",
-            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.2.10/DevtoolE2eInterceptorAutoBootstrap.xcframework.zip",
-            checksum: "2e20410e58fe939cbddb1ae6123cea7706a103f8aac8b9f12c4a0bd3ce442fc2"
+            name: "DevScenarioHttpInterceptorAutoBootstrap",
+            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.3.0/DevScenarioHttpInterceptorAutoBootstrap.xcframework.zip",
+            checksum: "e6574b94be6a3970159055e6fab34c4d71d69f2b84e2c346d4f901041d19cd53"
         ),
     ]
 )
