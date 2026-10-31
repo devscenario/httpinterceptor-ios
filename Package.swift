@@ -27,13 +27,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "DevScenarioHttpInterceptor",
-            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.3.0/DevScenarioHttpInterceptor.xcframework.zip",
-            checksum: "529ca0d4ad9ed98aa87a1cfc5867c7d0378e8c54c7b581248029372757b36080"
+            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/1.0.0/DevScenarioHttpInterceptor.xcframework.zip",
+            checksum: "4b82f8b94c5289ad5f4b6deedab9c6852c9f5e04866cc7aa16327ebc99405498"
         ),
         .binaryTarget(
             name: "DevScenarioHttpInterceptorAutoBootstrap",
-            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/0.3.0/DevScenarioHttpInterceptorAutoBootstrap.xcframework.zip",
-            checksum: "e6574b94be6a3970159055e6fab34c4d71d69f2b84e2c346d4f901041d19cd53"
+            url: "https://github.com/devscenario/httpinterceptor-ios/releases/download/1.0.0/DevScenarioHttpInterceptorAutoBootstrap.xcframework.zip",
+            checksum: "e2583b0af7f3a528d0c73abdb950dd59be2c6b977bab942cdfa91bd91fe13a5e"
         ),
     ]
 )
