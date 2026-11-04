@@ -17,7 +17,7 @@ https://github.com/devscenario/httpinterceptor-ios.git
 and add **one** of the two libraries to your app target. Or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.0")
+.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.1")
 ```
 
 Requirements: iOS 13+, Xcode 16.4 or newer.
@@ -69,4 +69,4 @@ answers binary messages.
 
 ## Version
 
-`1.0.0`. Debug symbols (dSYMs) ship inside the XCFrameworks.
+`1.0.1`. Debug symbols (dSYMs) ship inside the XCFrameworks.

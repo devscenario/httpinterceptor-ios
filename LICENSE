@@ -1,0 +1,39 @@
+Dev Scenario SDK License
+
+Copyright (c) 2026 Dev Scenario. All rights reserved.
+
+This license covers the Dev Scenario mobile libraries (the "SDK"): the in-app driver and the network
+interceptor for Android, iOS and Flutter, and their build plugins. It is not an open-source license.
+"You" means the person accepting this license or the organisation they act for.
+
+1. What you may do. Free of charge, you may:
+   (a) add the SDK, unmodified, to apps that you develop or test, for yourself or for a client, to test,
+       automate and inspect them with Dev Scenario; and
+   (b) distribute the SDK only inside builds of those apps, for example to testers, test devices or CI.
+   Compiling, linking, shrinking, optimizing or obfuscating the SDK as part of building your app (for
+   example with R8/ProGuard, Xcode or the Dart compiler) is not modifying it.
+
+2. What you may not do. Except where the law that applies to you allows it and this license can't take
+   that right away, you may not:
+   (a) modify, decompile, disassemble or otherwise reverse engineer the SDK;
+   (b) distribute the SDK on its own, or as part of another library, SDK or tool;
+   (c) make the SDK work with a testing tool other than Dev Scenario, or use it to build a product that
+       competes with Dev Scenario;
+   (d) remove or change this notice.
+
+3. Ownership. The SDK is licensed, not sold. All rights not expressly granted here are reserved.
+
+4. Third-party software. Parts of the SDK may include third-party software under its own license; that
+   license applies to those parts.
+
+5. Termination. This license ends automatically if you break it. You must then stop using and
+   distributing the SDK.
+
+6. No warranty. THE SDK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+   TO THE EXTENT THE LAW ALLOWS, THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM THE SDK OR ITS USE.
+
+7. Dev Scenario itself. Your use of the Dev Scenario app, CLI and services is covered by the terms at
+   https://devscenario.com/legal/terms/. This license is also published at
+   https://devscenario.com/legal/sdk-license/.
