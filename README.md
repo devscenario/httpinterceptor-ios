@@ -17,7 +17,7 @@ https://github.com/devscenario/httpinterceptor-ios.git
 and add **one** of the two libraries to your app target. Or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.1")
+.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.2")
 ```
 
 Requirements: iOS 13+, Xcode 16.4 or newer.
@@ -31,7 +31,7 @@ Requirements: iOS 13+, Xcode 16.4 or newer.
 import DevScenarioHttpInterceptor
 
 NetworkLogInterceptor.serverHost = "localhost"  // where Dev Scenario listens (default)
-NetworkLogInterceptor.serverPort = 8080
+NetworkLogInterceptor.serverPort = 27080
 ```
 
 It runs only in debuggable builds: a simulator build, or a device build signed for development
@@ -69,4 +69,4 @@ answers binary messages.
 
 ## Version
 
-`1.0.1`. Debug symbols (dSYMs) ship inside the XCFrameworks.
+`1.0.2`. Debug symbols (dSYMs) ship inside the XCFrameworks.
