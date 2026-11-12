@@ -17,7 +17,7 @@ https://github.com/devscenario/httpinterceptor-ios.git
 and add **one** of the two libraries to your app target. Or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.2")
+.package(url: "https://github.com/devscenario/httpinterceptor-ios.git", from: "1.0.3")
 ```
 
 Requirements: iOS 13+, Xcode 16.4 or newer.
@@ -36,7 +36,8 @@ NetworkLogInterceptor.serverPort = 27080
 
 It runs only in debuggable builds: a simulator build, or a device build signed for development
 (`get-task-allow`). In App Store, TestFlight and ad-hoc builds it does nothing unless the app opts in, with
-the Info.plist Boolean `DevScenarioInterceptorEnabledInRelease` (works for both libraries) or
+the Info.plist key `DevScenarioInterceptorEnabledInRelease` (works for both libraries; a Boolean, a
+list of bundle ids, or a String `YES`/`true`/`1` such as `$(MY_BUILD_SETTING)`) or
 `NetworkLogInterceptor.enabledInReleaseBuilds = true` (the manual library; the auto library then needs
 `DevScenarioHttpInterceptorAutoBootstrap.install()`).
 
@@ -69,4 +70,4 @@ answers binary messages.
 
 ## Version
 
-`1.0.2`. Debug symbols (dSYMs) ship inside the XCFrameworks.
+`1.0.3`. Debug symbols (dSYMs) ship inside the XCFrameworks.
